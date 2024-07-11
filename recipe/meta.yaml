@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/ICAMS/TensorPotential/archive/8776209fec766bfee4268e7e0b82a4ddb88d7cbe.tar.gz
   sha256: f8db5a18af47d066373bd708f3650b58843377f06aed7569bdb5be1b33e0aef5
+  patches:
+    - python.patch
 
 build:
   noarch: python
@@ -16,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.6,<3.11
+    - python >=3.6,<3.13
     - pip
   run:
-    - python >=3.6,<3.11
+    - python >=3.6,<3.13
     - scipy
     - tensorflow >=2.5
     - numpy
