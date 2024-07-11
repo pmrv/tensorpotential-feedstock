@@ -1,17 +1,17 @@
-From 84a7cb1f0a29fab09342ec86792ecde1f515901d Mon Sep 17 00:00:00 2001
+From 610009806fa734dbef0a3dfa5ed68839b2627419 Mon Sep 17 00:00:00 2001
 From: Jan Janssen <jan-janssen@users.noreply.github.com>
-Date: Thu, 11 Jul 2024 09:35:51 +0200
+Date: Thu, 11 Jul 2024 11:03:49 +0200
 Subject: [PATCH] Update setup.py
 
 ---
- setup.py | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ setup.py | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 
 diff --git a/setup.py b/setup.py
-index 2d9c4c7..7e192db 100644
+index 2d9c4c7..eaea370 100644
 --- a/setup.py
 +++ b/setup.py
-@@ -15,7 +15,7 @@
+@@ -15,11 +15,11 @@
      author='Anton Bochkarev',
      author_email='',
      description='',
@@ -20,3 +20,8 @@ index 2d9c4c7..7e192db 100644
      install_requires=
      [
      'scipy',
+-    'tensorflow<=2.12.1',
++    'tensorflow',
+     'numpy',
+     'pandas',
+     'ase'
