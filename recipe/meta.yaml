@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 2
 
 requirements:
   host:
@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6,<3.13
     - scipy
-    - tensorflow <=2.12.1
+    - tensorflow
     - numpy
     - pandas
     - ase
