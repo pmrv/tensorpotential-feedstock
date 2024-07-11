@@ -1,0 +1,22 @@
+From 84a7cb1f0a29fab09342ec86792ecde1f515901d Mon Sep 17 00:00:00 2001
+From: Jan Janssen <jan-janssen@users.noreply.github.com>
+Date: Thu, 11 Jul 2024 09:35:51 +0200
+Subject: [PATCH] Update setup.py
+
+---
+ setup.py | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index 2d9c4c7..7e192db 100644
+--- a/setup.py
++++ b/setup.py
+@@ -15,7 +15,7 @@
+     author='Anton Bochkarev',
+     author_email='',
+     description='',
+-    python_requires='<3.11',
++    python_requires='<3.13',
+     install_requires=
+     [
+     'scipy',
