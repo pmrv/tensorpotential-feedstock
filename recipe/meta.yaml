@@ -6,23 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ICAMS/TensorPotential/archive/897d386a73bbc16a1966f6f0f545feeda742fd1f.tar.gz
-  sha256: feb7e87a207c1eff23c59e914dc146ef516f52cb18102e8a61a14e2fee539568
+  url: https://github.com/ICAMS/TensorPotential/archive/8776209fec766bfee4268e7e0b82a4ddb88d7cbe.tar.gz
+  sha256: f8db5a18af47d066373bd708f3650b58843377f06aed7569bdb5be1b33e0aef5
+  patches:
+    - python.patch
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6,<3.9
+    - python >=3.6,<3.13
     - pip
   run:
-    - python >=3.6,<3.9
-    - scipy >=1.4.1
-    - tensorflow >=2.5
-    - numpy =1.19.4
+    - python >=3.6,<3.13
+    - scipy
+    - tensorflow <=2.12.1
+    - numpy
     - pandas
     - ase
 
@@ -43,7 +45,7 @@ about:
     and perform computations using these potentials.
   license: GPL-3.0-or-later
   license_family: GPL
-  license_file: LICENSE
+  license_file: LICENSE.md
   doc_url: https://github.com/ICAMS/TensorPotential
   dev_url: https://github.com/ICAMS/TensorPotential
 
