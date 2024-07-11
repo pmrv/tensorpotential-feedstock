@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ICAMS/TensorPotential/archive/897d386a73bbc16a1966f6f0f545feeda742fd1f.tar.gz
+  url: https://github.com/ICAMS/TensorPotential/archive/8776209fec766bfee4268e7e0b82a4ddb88d7cbe.tar.gz
   sha256: feb7e87a207c1eff23c59e914dc146ef516f52cb18102e8a61a14e2fee539568
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.6,<3.9
+    - python >=3.6
     - pip
   run:
-    - python >=3.6,<3.9
-    - scipy >=1.4.1
+    - python >=3.6
+    - scipy
     - tensorflow >=2.5
-    - numpy =1.19.4
+    - numpy
     - pandas
     - ase
 
