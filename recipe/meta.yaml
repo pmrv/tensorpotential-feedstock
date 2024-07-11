@@ -23,7 +23,7 @@ requirements:
   run:
     - python >=3.6,<3.13
     - scipy
-    - tensorflow >=2.5
+    - tensorflow <=2.12.1
     - numpy
     - pandas
     - ase
