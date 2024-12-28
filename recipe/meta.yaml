@@ -14,14 +14,14 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 3
 
 requirements:
   host:
-    - python >=3.6,<3.13
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6,<3.13
+    - python >={{ python_min }},<3.13
     - scipy
     - tensorflow
     - numpy
@@ -33,6 +33,7 @@ test:
     - tensorpotential
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
