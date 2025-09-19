@@ -5,7 +5,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/tensorpotential
 
 Home: https://github.com/ICAMS/TensorPotential
 
-Package license: GPL-3.0-or-later
+Package license: ASL
 
 Summary: TensorFlow based interface for ML potentials development, fitting and evaluation
 
